@@ -1,0 +1,55 @@
+@import '../../App'
+.Showcase
+    height: 600px
+    width: 100%
+    overflow: hidden
+    object-position: center
+    position: relative
+
+    &:after
+        position: absolute
+        content: ''
+        top: 0
+        left: 0
+        width: 0
+        height: 100%
+        width: 100%
+        background: linear-gradient(to top, black , transparent)
+
+    img
+        object-position: right
+        object-fit: cover
+        height: 900px
+        width: 100%
+
+    .content 
+        position: absolute
+        width: 500px
+        bottom: 10%
+        left: 10%
+        z-index: 3
+        h1
+            color: white
+            font-size: 3.5rem
+            line-height: 3rem
+            margin-bottom: 30px
+            text-transform: uppercase
+        p
+            color: white
+            font-size: 1.1rem
+            margin-bottom: 20px
+            span     
+                font-style: italic
+
+        button
+            border-style: none
+            background: transparent
+            border: 2px solid $gold-text
+            border-radius: 5px
+            padding: 7px 20px
+            color: $gold-text
+            cursor: pointer
+            font-size: .8rem
+            text-transform: uppercase
+
+            &:hover
