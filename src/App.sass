@@ -2,8 +2,10 @@
     margin: 0 
     outline: none
     box-sizing: border-box
-//COLORS
-$gold-text: #E9D376
+COLORS
+//ffc60b
+// $gold-text: #E9D376
+$gold-text: #ffc60b
 @mixin container($max-width)
     margin: 0 auto
     width: 80% 
@@ -11,6 +13,8 @@ $gold-text: #E9D376
 
 .container 
     @include container(1400px)
+.sm-container
+    @include container(1200px)
 
 // .nav-container 
 //     @include container(500px)
