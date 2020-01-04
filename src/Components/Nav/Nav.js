@@ -8,10 +8,10 @@ const Nav = () => {
             <div className='nav-container container'>
             <i className="fas fa-search"></i>
             <nav className=''>
+                <Link to='#'><li>All products</li></Link>
                 <Link to='#'><li>suits</li></Link>
-                <Link to='#'><li>shirts</li></Link>
                 <Link to={'/'}><img src={logo} alt="logo"/></Link>
-                <Link to='#'><li>belts</li></Link>
+                <Link to='#'><li>shirts</li></Link>
                 <Link to='#'><li>shoes</li></Link>
             </nav>
             <i className="fas fa-shopping-bag"></i>
