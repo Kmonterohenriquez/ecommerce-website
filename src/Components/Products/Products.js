@@ -1,12 +1,12 @@
 import React from 'react';
-import './NewProduct.sass';
+import './Products.sass';
 
-const NewProduct = () => {
+const Products = (props) => {
 	return (
-		<div className='NewProduct'>
+		<div className='Products'>
 			<div className='sm-container'>
-				<h1>Our Products</h1>
-				<div className='NewProduct-grid '>
+				<h1>{props.title}</h1>
+				<div className='Products-grid '>
 					<div className='item-box'><img src="" alt=""/></div>
 					<div className='item-box'><img src="" alt=""/></div>
 					<div className='item-box'><img src="" alt=""/></div>
@@ -16,4 +16,4 @@ const NewProduct = () => {
 	);
 };
 
-export default NewProduct;
+export default Products;

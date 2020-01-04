@@ -1,0 +1,45 @@
+@import '../../App'
+.NewReleases
+    padding: 200px 0 150px
+    background: #252525
+    color: white
+    text-align: center
+    clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0)
+
+    &-title
+        margin-bottom: 60px
+        font-size: 3rem
+        letter-spacing: 1.5px
+
+    &-grid
+        display: grid
+        grid-template-columns: repeat( auto-fit , minmax(280px, 1fr))
+        grid-gap: 50px
+        justify-items: center
+
+        .item-box
+            height: 500px
+            max-width: 320px
+            margin-bottom: 40px
+            overflow: hidden
+            img 
+                object-fit: cover
+                object-position: center
+                background: #e3e3e3
+                height: 400px
+                width: 100%
+                border-radius: 5px
+                box-shadow: 5px 5px 10px #0000007e
+                margin-bottom: 10px
+
+            .info
+                padding: 10px 0
+                height: 100px
+
+                .product-name
+                    font-size: 1.5rem
+                    margin-bottom: 5px
+                .product-price 
+                    color: $gold-text
+                    font-weight: 700
+                    font-size: .9

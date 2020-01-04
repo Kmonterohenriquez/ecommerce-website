@@ -8,6 +8,7 @@ class Licenses extends Component {
 				<a href='http://www.freepik.com'>Designed by Racool_studio / Freepik</a>
 				<a href="http://www.freepik.com">Designed by freepic.diller / Freepik</a>
 				<a href="https://www.freepik.com/free-photos-vectors/pattern">Pattern photo created by rawpixel.com - www.freepik.com</a>
+				<a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>
 			</div>
 		);
 		
