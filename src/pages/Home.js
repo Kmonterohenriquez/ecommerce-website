@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Showcase from '../Components/Showcase/Showcase'
 import NewProduct from '../Components/NewProduct/NewProduct';
 import {Link} from 'react-router-dom'
+import WhyAaron from '../Components/WhyAaron/WhyAaron'
 class Home extends Component {
 	state = {};
 	render() {
@@ -12,6 +13,7 @@ class Home extends Component {
 				<Showcase />
 				<NewProduct />
 				<Link to={'/licensing'}>Licensing</Link>
+				<WhyAaron/>
 			</div>
 		);
 	}
