@@ -1,3 +1,5 @@
+@import '../../App'
+
 .Footer
     padding: 80px
     background:#252525
@@ -5,6 +7,73 @@
 
     .grid-footer
         display: grid
-        grid-template-columns: repeat(auto-fit, minmax( 200px, 1fr))
+        grid-template-columns: repeat(auto-fit, minmax( 250px, 1fr))
         justify-content: space-between
-        align-items: center
+        grid-gap: 30px
+        // align-items: center
+    .box-2
+        
+        h1 
+            margin-bottom: 10px
+        
+        p 
+            margin-bottom: 20px
+        .email-input
+            display: flex
+            // justify-content: center
+            align-items: center
+
+            input 
+                padding: 7px 10px
+                background: transparent
+                border-style: none
+                border-bottom: 2px solid white
+                color: white
+                margin-right: 15px
+                width: 90%
+                font-size: 1.1rem
+                transition: border-bottom .3s
+
+                &:focus
+                    border-bottom: 2px solid $gold-text
+
+            i
+                padding: 15px 0 5px
+                font-size: 1.5rem
+                margin-right: 15px
+
+            button
+                color: white
+                padding: 10px 15px
+                background: transparent
+                border-style: none
+                border: 2px solid $gold-text
+                border-radius: 20px
+                font-weight: 700
+                transition: background .5s, color .5s
+                cursor: pointer
+                &:hover
+                    background: $gold-text
+                    color: #252525
+
+
+    .box-3
+        display: flex
+        justify-content: flex-end
+        .align-end
+            width: 250px
+            ul
+                columns: 2
+                height: 160px
+
+                li
+                    list-style: none
+                    line-height: 2rem
+                    font-size: .9rem
+                    a
+                        cursor: pointer
+                        color: white
+                        text-decoration: none
+
+                    &:hover 
+                        text-decoration: underline
