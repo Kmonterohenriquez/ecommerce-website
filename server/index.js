@@ -3,8 +3,8 @@ const express = require('express'),
 	massive = require('massive'),
 	session = require('express-session'),
 	{ SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env,
-	authCtrl = require('./controllers/authController'),
-	reviewCtrl = require('./controllers/reviewController'),
+	authCtrl = require('./controllers/authControllers'),
+	// reviewCtrl = require('./controllers/reviewController'),
 	app = express();
 
 app.use(express.json());
@@ -24,10 +24,7 @@ massive(CONNECTION_STRING).then(db => {
 });
 
 //auth endpoints
-app.post('/auth/login', authCtrl.login);
-app.post('/auth/register', authCtrl.register);
-app.post('/auth/logout', authCtrl.logout);
-app.get('/auth/userData', authCtrl.userData);
+// rs
 
-const port = SERVER_PORT;
+const port = 5000;
 app.listen(port, () => console.log(`Server running on port ${port}`));
