@@ -24,7 +24,7 @@ massive(CONNECTION_STRING).then(db => {
 });
 
 //auth endpoints
-// rs
+
 
 const port = 5000;
 app.listen(port, () => console.log(`Server running on port ${port}`));

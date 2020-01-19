@@ -7,7 +7,7 @@ const Showcase =()=>{
             <img src={picture} alt=""/>
             <div className="content ">
                 <h1>Aaron <br/>is all you need</h1>
-                <p>Simplicity, carried to an an extreme, becomes elegance.<br/> <span>- Jon Franklin</span></p>
+                <p>Simplicity, carried to an extreme, becomes elegance.<br/> <span>- Jon Franklin</span></p>
                 <button>Shop now</button>
             </div>
         </div>

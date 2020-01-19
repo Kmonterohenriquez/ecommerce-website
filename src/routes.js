@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 // PAGES
 import Home from './pages/Home';
 import Licensing from './pages/Licensing/Licensing';
-import AllProducts from './pages/AllProducts';
+import AllProducts from './pages/AllProdutcs/AllProducts';
 import Suits from './pages/Suits';
 import Shoes from './pages/Shoes';
 import Shirts from './pages/Shirts';
