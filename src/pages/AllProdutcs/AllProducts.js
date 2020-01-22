@@ -3,6 +3,7 @@ import './AllProducts.sass';
 import data from '../../data';
 import Item from '../../Components/Item/Item';
 import Footer from '../../Components/Footer/Footer';
+import { Link } from 'react-router-dom';
 const AllProducts = () => {
 	console.log('data', data);
 	return (
@@ -22,7 +23,9 @@ const AllProducts = () => {
 				</div>
 				<div className='Item-grid'>
 					{data.map(item => (
-						<Item item={item} />
+						<Link key={item.id} to={`/item-details/${item.id}`}>
+							<Item item={item} />
+						</Link>
 					))}
 				</div>
 			</div>

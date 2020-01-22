@@ -21,13 +21,13 @@ const Footer = () => {
                 <div className="box-3">
                     <div className='align-end'>
                         <ul>
-                            <li><Link>Ties</Link></li>
-                            <li><Link>Suits</Link></li>
-                            <li><Link>Belts</Link></li>
-                            <li><Link>Shirts</Link></li>
-                            <li><Link>Return Policy</Link></li>
+                            <li><Link to='#'>Ties</Link></li>
+                            <li><Link to='#'>Suits</Link></li>
+                            <li><Link to='#'>Belts</Link></li>
+                            <li><Link to='#'>Shirts</Link></li>
+                            <li><Link to='#'>Return Policy</Link></li>
                             <li><Link to={'/licensing'}>Licensing</Link></li>
-                            <li><Link>Contact Us</Link></li>
+                            <li><Link to='/contact'>Contact Us</Link></li>
                         </ul>
                     </div>
                 </div>

@@ -5,6 +5,7 @@ const express = require('express'),
 	{ SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env,
 	authCtrl = require('./controllers/authControllers'),
 	// reviewCtrl = require('./controllers/reviewController'),
+	itemCtrl= require('./controllers/itemControllers')
 	app = express();
 
 app.use(express.json());
@@ -23,8 +24,19 @@ massive(CONNECTION_STRING).then(db => {
 	console.log('db connected');
 });
 
-//auth endpoints
+// AUTH ENDPOINTS
+app.post('/auth/login', authCtrl.login);
+app.post('/auth/register', authCtrl.register);
+app.post('/auth/logout', authCtrl.logout);
+app.get('/auth/userData', authCtrl.userData);
+
+app.post('api/items', itemCtrl.addItem)
+app.put('/api/items', itemCtrl.updateItem);
+app.delete('/api/items/:item_id', itemCtrl.deleteItem);
+app.get('/api/items/:item_id', itemCtrl.getItem); //GET ONE ITEM
+app.get('/api/items', itemCtrl.getAllItem); // GET ALL ITEM
 
 
-const port = 5000;
+
+const port = SERVER_PORT;
 app.listen(port, () => console.log(`Server running on port ${port}`));
