@@ -25,16 +25,21 @@ massive(CONNECTION_STRING).then(db => {
 });
 
 // AUTH ENDPOINTS
-app.post('/auth/login', authCtrl.login);
-app.post('/auth/register', authCtrl.register);
-app.post('/auth/logout', authCtrl.logout);
-app.get('/auth/userData', authCtrl.userData);
+// app.post('/auth/login', authCtrl.login);
+// app.post('/auth/register', authCtrl.register);
+// app.post('/auth/logout', authCtrl.logout);
+// app.get('/auth/userData', authCtrl.userData);
+// // axios.get(`/api/items/name=${name}&description=${description}`)
 
-app.post('api/items', itemCtrl.addItem)
-app.put('/api/items', itemCtrl.updateItem);
-app.delete('/api/items/:item_id', itemCtrl.deleteItem);
-app.get('/api/items/:item_id', itemCtrl.getItem); //GET ONE ITEM
-app.get('/api/items', itemCtrl.getAllItem); // GET ALL ITEM
+// app.post('api/items', itemCtrl.addItem)
+// app.put('/api/items', itemCtrl.updateItem);
+// app.delete('/api/items/:item_id', itemCtrl.deleteItem);
+// app.get('/api/items/:item_id', itemCtrl.getItem); //GET ONE ITEM
+// app.get('/api/items', itemCtrl.getAllItem); // GET ALL ITEM
+
+app.get('/api/items', function (req, res){
+	console.log(req.query)
+})
 
 
 

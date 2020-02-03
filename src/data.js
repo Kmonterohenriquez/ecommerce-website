@@ -1,5 +1,8 @@
 import shirt_1 from './img/shirts/shirt_1.webp';
-import shirt_2 from './img/shirts/shirt_2.webp'
+import shirt_2 from './img/shirts/shirt_2.webp';
+import red_shirt_1 from './img/shirts/red_shirt_1.webp'
+import red_shirt_2 from './img/shirts/red_shirt_2.webp'
+
 export default [
 	{
 		id: 1,
@@ -24,7 +27,7 @@ export default [
     {
 		id: 3,
 		type: 'suit',
-		image: shirt_1,
+		image: red_shirt_1,
 		name: 'Blue Calvin Klein Dress shirt',
 		size: ['M', 'Lg'],
 		price: '150',
@@ -34,7 +37,7 @@ export default [
     {
 		id: 4,
 		type: 'suit',
-		image: shirt_1,
+		image: red_shirt_2,
 		name: 'Blue Calvin Klein Dress shirt',
 		size: ['M', 'Lg'],
 		price: '150',

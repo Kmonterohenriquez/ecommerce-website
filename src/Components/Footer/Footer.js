@@ -1,13 +1,14 @@
 import React from 'react'
 import './Footer.sass'
 import {Link} from 'react-router-dom'
+import logo from '../../img/A_logo.png'
 
 const Footer = () => {
     return (
         <div className='Footer'>
             <div className="grid-footer container">
                 <div className="box-1">
-                    <h1>logo</h1>
+                    <img src={logo} alt="logo"/>
                 </div>
                 <div className="box-2">
                     <h1>BECOME AN INSIDER</h1>
