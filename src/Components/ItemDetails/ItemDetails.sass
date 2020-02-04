@@ -1,0 +1,78 @@
+.item-info
+    margin-top: 50px
+    min-height: calc(100vh - 110px)
+
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+    grid-gap: 20px 
+    justify-content: space-between
+     
+    .right-side 
+        padding: 80px 0
+        .Item-name 
+            margin-bottom: 12px
+        
+        .Item-price 
+            color: #A98B6C
+            font-weight: 700
+            margin-bottom: 30px
+            font-size: 1.1rem
+        hr 
+            margin-bottom: 30px
+            border: solid red  .5px
+            border-radius: 10px
+        
+        .all-sizes 
+            display: flex 
+            margin-bottom: 18px
+            .size
+                border-radius: 2px
+                margin: 0 5px
+                height: 30px
+                width: 35px
+                display: flex
+                justify-content: center 
+                align-items: center
+                
+                border: 1px solid black
+
+        .AddItem-btn 
+            cursor: pointer
+            font-size: .8rem
+            background: #CF2424
+            border-style: none 
+            color: white 
+            letter-spacing: 2px
+            padding: 10px
+            width: 100%
+            font-weight: 700
+            clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%)
+            margin-bottom: 35px
+
+        .Item-description 
+            line-height: 1.7rem
+
+        .share-btn 
+            display: flex 
+            justify-content: center 
+            p 
+                margin: 15px 10px
+                padding: 10px
+                font-size: .9rem
+                cursor: pointer
+                transition: .5s background
+                border-radius: 30px
+                &:hover 
+                    
+                    background: #cecece
+                i 
+                    margin-right: 2px
+
+                .fa-facebook-f
+                    color: #4267B2
+
+                .fa-twitter 
+                    color: #1DA1F2
+
+                .fa-pinterest-p
+                    color: #BB081D
