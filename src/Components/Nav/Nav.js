@@ -2,6 +2,7 @@ import React from 'react';
 import './Nav.sass'
 import {Link} from 'react-router-dom'
 import logo from '../../img/A_logo.png'
+
 const Nav = () => {
     return (
         <header className='Nav '>
