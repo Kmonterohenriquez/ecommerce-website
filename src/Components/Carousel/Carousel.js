@@ -1,18 +1,45 @@
-import React from 'react'
+import React from 'react';
+import Slider from 'react-slick';
+import './Carousel.sass'
 
 const Carousel = () => {
-    return (
-        <div style={{ height: '700px'}}>
-            <div className="container">
-            <h1 style={{ paddingTop: '80px', textAlign: 'center', marginBottom: '30px'}}>Working on this component</h1>
-            {/* <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita velit beatae delectus repellat explicabo inventore tenetur corporis quisquam. Perspiciatis qui minima reiciendis incidunt, assumenda sint aliquam vero corporis sed aliquid?</p>
+	var settings = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrow: true
+	};
+	return (
+		<div className=' Carousel container'>
+            <h1>Testimonials</h1>
+			<Slider {...settings}>
+				<div className="box">
+                    <h3><i className="quote fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sint, ducimus, unde quam quidem, consequatur ut in aliquam tempore libero at error aspernatur dolorem fuga magnam commodi consectetur culpa dicta!<i className=" quote fas fa-quote-right"></i>
+                    </h3>
+                </div>
+				<div className="box">
+                    <h3><i className="quote fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sint, ducimus, unde quam quidem, consequatur ut in aliquam tempore libero at error aspernatur dolorem fuga magnam commodi consectetur culpa dicta!<i className=" quote fas fa-quote-right"></i>
+                    </h3>
+                </div>
+				<div className="box">
+                    <h3><i className="quote fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sint, ducimus, unde quam quidem, consequatur ut in aliquam tempore libero at error aspernatur dolorem fuga magnam commodi consectetur culpa dicta!<i className=" quote fas fa-quote-right"></i>
+                    </h3>
+                </div>
+				<div className="box">
+                    <h3><i className="quote fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sint, ducimus, unde quam quidem, consequatur ut in aliquam tempore libero at error aspernatur dolorem fuga magnam commodi consectetur culpa dicta!<i className=" quote fas fa-quote-right"></i>
+                    </h3>
+                </div>
+				<div className="box">
+                    <h3><i className="quote fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sint, ducimus, unde quam quidem, consequatur ut in aliquam tempore libero at error aspernatur dolorem fuga magnam commodi consectetur culpa dicta!<i className=" quote fas fa-quote-right"></i>
+                    </h3>
+                </div>
+				
+			</Slider>
+		</div>
+	);
+};
 
-            <br/>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure distinctio, voluptatem maiores reiciendis quod eaque perferendis, at consequatur dolorum doloribus assumenda placeat praesentium obcaecati, dolorem repellendus totam labore et hic!</p> */}
-            </div>
-        </div>
-    )
-}
-
-export default Carousel
+export default Carousel;

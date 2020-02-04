@@ -37,10 +37,6 @@ massive(CONNECTION_STRING).then(db => {
 // app.get('/api/items/:item_id', itemCtrl.getItem); //GET ONE ITEM
 // app.get('/api/items', itemCtrl.getAllItem); // GET ALL ITEM
 
-app.get('/api/items', function (req, res){
-	console.log(req.query)
-})
-
 
 
 const port = SERVER_PORT;
