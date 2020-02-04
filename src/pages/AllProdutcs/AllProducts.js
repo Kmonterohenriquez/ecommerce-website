@@ -4,10 +4,12 @@ import data from '../../data';
 import Item from '../../Components/Item/Item';
 import Footer from '../../Components/Footer/Footer';
 import { Link } from 'react-router-dom';
+import PageTitle from '../../Components/PageTitle/PageTitle'
 const AllProducts = () => {
 	console.log('data', data);
 	return (
 		<div className='AllProducts'>
+			<PageTitle title='All products'/>
 			<div className='container'>
 				<div className='top-container'>
 					<p>{data.length} products</p>

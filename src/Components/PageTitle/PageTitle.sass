@@ -1,0 +1,34 @@
+.PageTitle 
+    // background: #FFC60B
+    height: 190px
+    text-emphasis-color: white
+    color: white
+    position: relative
+    z-index: 
+    .background 
+        position: absolute 
+        height: 55% 
+        width: 100%
+        background: #252525
+
+    h1
+        font-size: 5rem 
+        margin: 0
+        padding: 0
+        top: 50% 
+        left: 50%
+        transform: translate(-50%, -50%)
+        position: absolute
+        color: #252525
+        letter-spacing: 1px
+        // text-align: center 
+
+        &:before
+            content: attr(data-text)
+            position: absolute
+            top: 0
+            left: 0
+            color: white
+            width: 100% 
+            height: 60%
+            overflow: hidden

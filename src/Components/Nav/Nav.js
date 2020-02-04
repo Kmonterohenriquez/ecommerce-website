@@ -14,7 +14,10 @@ const Nav = () => {
                 <Link to='/shirts'><li>shirts</li></Link>
                 <Link to='/shoes'><li>shoes</li></Link>
             </nav>
-            <i className="fas fa-shopping-bag"></i>
+            <div className='right-side'>
+                <i className="fas fa-shopping-bag"></i>
+                <Link to='/login'><i className="fas fa-user"></i></Link>
+            </div>
             </div>
         </header>
     );
