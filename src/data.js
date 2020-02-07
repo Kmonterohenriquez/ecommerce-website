@@ -47,7 +47,7 @@ export default [
     {
 		id: 5,
 		type: 'suit',
-		image: shirt_1,
+		image: shirt_2,
 		name: 'Blue Calvin Klein Dress shirt',
 		size: ['M', 'Lg'],
 		price: '150',
@@ -57,7 +57,7 @@ export default [
     {
 		id: 6,
 		type: 'suit',
-		image: shirt_1,
+		image: red_shirt_2,
 		name: 'Blue Calvin Klein Dress shirt',
 		size: ['M', 'Lg'],
 		price: '150',

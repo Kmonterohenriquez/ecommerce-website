@@ -6,7 +6,6 @@ const Login = () => {
 	return (
 		<div className='Login'>
 			<div className='Login-container container'>
-                <img src={login_img} alt=""/>
 				<form>
                     <h1>Login</h1>
 					<input type='email' name='email' placeholder='Example@aaron.com' />
@@ -14,6 +13,7 @@ const Login = () => {
 					<button type='submit'>Login</button>
                     <p>Not a member yet? <Link>Register</Link></p>
 				</form>
+                <img src={login_img} alt=""/>
 			</div>
 		</div>
 	);
