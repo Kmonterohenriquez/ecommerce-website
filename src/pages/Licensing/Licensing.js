@@ -11,6 +11,7 @@ class Licenses extends Component {
 				<a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>
 				<a href="https://www.freepik.com/free-photos-vectors/man">Man photo created by Racool_studio - www.freepik.com</a>
 				<a href="https://www.freepik.com/free-photos-vectors/man">Man photo created by Racool_studio - www.freepik.com</a>
+				<a href="https://www.freepik.com/free-photos-vectors/wedding">Wedding photo created by freepic.diller - www.freepik.com</a>
 			</div>
 		);
 		

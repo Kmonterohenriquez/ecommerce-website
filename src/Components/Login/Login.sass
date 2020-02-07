@@ -1,0 +1,56 @@
+.Login
+    height: calc(100vh - 95px)
+    &-container
+        height: 100%
+        display: flex 
+        align-items: center
+        justify-content: center
+        height: 450px 
+        border-radius: 30px
+        overflow: hidden
+        // background: red
+        position: relative
+        img 
+            height: 450px 
+            border-radius: 20px 0 0 20px
+            position: relative
+
+            &:after 
+                content: ''
+                position: absolute 
+                width: 100% 
+                height: 100% 
+                top: 0 
+                left: 0 
+                background: red
+                opacity: .8
+        form 
+            background: grey 
+            padding: 100px 50px 
+            height: 100%
+            
+            border-radius: 0 20px 20px 0
+            display: flex 
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            h1 
+                margin-bottom: 15px 
+            input 
+                margin-bottom: 10px 
+                border-radius: 30px 
+                border-style: none 
+                border: 1px solid #ccc 
+                padding: 10px 
+            button 
+                width: 100% 
+                border-radius: 30px 
+                padding: 10px 
+                background: #CF2424
+                border-style: none
+                color: white 
+                font-weight: 700 
+                letter-spacing: 1px
+                font-size: 1.1rem
+                margin-bottom: 15px 
