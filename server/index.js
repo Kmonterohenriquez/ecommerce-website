@@ -1,15 +1,24 @@
 require('dotenv').config();
 const express = require('express'),
-	massive = require('massive'),
+	// massive = require('massive'),
+	mongoose = require('mongoose'),
+	bodyParser = require('body-parser'),
 	session = require('express-session'),
 	{ SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env,
 	authCtrl = require('./controllers/authControllers'),
 	// reviewCtrl = require('./controllers/reviewController'),
-	itemCtrl= require('./controllers/itemControllers')
-	app = express();
+	itemCtrl = require('./controllers/itemControllers');
+app = express();
 
-app.use(express.json());
+//Bodyparser Middleware 
+app.use(bodyParser.json());
 
+
+// app.use(express.json());
+
+// ---------- Express (Static Files) --------------- //
+// http://localhost:4000/cssFiles/testStyle.css
+app.use('/cssFiles', express.static(__dirname + '/competencies'));
 app.use(
 	session({
 		resave: false,
@@ -36,8 +45,6 @@ massive(CONNECTION_STRING).then(db => {
 // app.delete('/api/items/:item_id', itemCtrl.deleteItem);
 // app.get('/api/items/:item_id', itemCtrl.getItem); //GET ONE ITEM
 // app.get('/api/items', itemCtrl.getAllItem); // GET ALL ITEM
-
-
 
 const port = SERVER_PORT;
 app.listen(port, () => console.log(`Server running on port ${port}`));

@@ -9,7 +9,8 @@ const AllProducts = () => {
 	console.log('data', data);
 	return (
 		<div className='AllProducts'>
-			<PageTitle title='All products'/>
+			<PageTitle title='All'/>
+			
 			<div className='container'>
 				<div className='top-container'>
 					<p>{data.length} products</p>
