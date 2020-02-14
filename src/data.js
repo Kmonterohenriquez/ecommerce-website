@@ -4,6 +4,7 @@ import red_shirt_1 from './img/shirts/red_shirt_1.webp';
 import red_shirt_2 from './img/shirts/red_shirt_2.webp';
 import navy_blue_suit from './img/navy_blue_suit.jfif';
 import black_suit from './img/black_ suit.webp';
+import red_suit from './img/red_suit.webp'
 
 export default [
 	{
@@ -92,6 +93,18 @@ export default [
 		id: 8,
 		type: 'Black Suit ',
 		image: black_suit,
+		category: 'suit',
+
+		name: 'Blue Calvin Klein Dress shirt',
+		size: ['M', 'Lg'],
+		price: '300',
+		description:
+			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas magni doloribus reiciendis. Laboriosam vel incidunt voluptatem atque vitae, facere tempora placeat totam molestiae voluptates dignissimos modi, consectetur autem quibusdam expedita.'
+	},
+	{
+		id: 9,
+		type: 'Red Suit ',
+		image: red_suit,
 		category: 'suit',
 
 		name: 'Blue Calvin Klein Dress shirt',
