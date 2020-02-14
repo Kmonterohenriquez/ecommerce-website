@@ -12,7 +12,7 @@ module.exports = {
 
 		const db = req.app.get('db');
 		await db.items
-			.update(item_id)
+			.updateItems(item_id)
 			.then(res.sendStatus(200))
 			.catch(err => res.status(500).send(err));
 	},
@@ -26,8 +26,8 @@ module.exports = {
     },
 	getAllItem: async (req, res) => {
         const db = req.app.get('db');
-		await db.reviews
-			.get_all_items(user_id)
+		await db.items
+			.getItems(user_id)
 			.then(items => res.status(200).send(items))
 			.catch(err => res.status(500).send(err));
     },

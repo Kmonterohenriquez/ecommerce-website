@@ -1,0 +1,1 @@
+select * from tableName where item_id =$1;

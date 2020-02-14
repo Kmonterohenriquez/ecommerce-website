@@ -9,7 +9,7 @@ const AllProducts = () => {
 	console.log('data', data);
 	return (
 		<div className='AllProducts'>
-			<PageTitle title='All'/>
+			<PageTitle title='All Products'/>
 			
 			<div className='container'>
 				<div className='top-container'>
