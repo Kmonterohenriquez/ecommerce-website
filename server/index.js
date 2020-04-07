@@ -11,7 +11,6 @@ app = express();
 app.use(express.json());
 
 
-app.use('/cssFiles', express.static(__dirname + '/competencies'));
 app.use(
 	session({
 		resave: false,
