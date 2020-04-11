@@ -8,16 +8,17 @@ const Nav = () => {
         <header className='Nav '>
             <div className='nav-container container'>
             <i className="fas fa-search"></i>
-            <nav className=''>
-                <Link to='/all_products'><li>All products</li></Link>
-                <Link to='/suits'><li>suits</li></Link>
+            <nav >
+                <Link className='link' to='/all_products'><li>All products</li></Link>
+                <Link className='link' to='/suits'><li>suits</li></Link>
                 <Link to={'/'}><img src={logo} alt="logo"/></Link>
-                <Link to='/shirts'><li>shirts</li></Link>
-                <Link to='/shoes'><li>shoes</li></Link>
+                <Link className='link' to='/shirts'><li>shirts</li></Link>
+                <Link className='link' to='/shoes'><li>shoes</li></Link>
             </nav>
             <div className='right-side'>
+                <i className="menu-icon fas fa-ellipsis-v"></i>
                 <i className="fas fa-shopping-bag"></i>
-                <Link to='/login'><i className="fas fa-user"></i></Link>
+                <Link className='link' to='/login'><i className="fas fa-user"></i></Link>
             </div>
             </div>
         </header>

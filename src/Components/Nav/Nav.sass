@@ -1,32 +1,52 @@
 .Nav
     box-shadow: 5px 0px 5px #ccc
-.nav-container
-    display: flex
-    justify-content: space-between
-    align-items: center
 
-    i 
-        cursor: pointer
-        font-size: 1.2rem
-
-    nav
+    .nav-container
         display: flex
         justify-content: space-between
         align-items: center
-        padding: 0px
-        width: 550px
 
-        img
-            height: 60px
+        .menu-icon 
+            display: none
+            font-size: 1.6rem
+            color: #747985
+
+        i 
+            cursor: pointer
+            font-size: 1.2rem
+
+        nav
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 0px
+            width: 550px
+
+            img
+                height: 60px
+            a 
+                text-transform: uppercase
+                font-size: .9rem
+                font-weight: bolder
+                padding: 15px 20px
+            li 
+                list-style: none
         a 
-            text-transform: uppercase
-            font-size: .9rem
-            font-weight: bolder
-            padding: 15px 20px
-        li 
-            list-style: none
-    a 
-        text-decoration: none 
-        color: black
-    .fa-user
-        margin-left: 30px
+            text-decoration: none 
+            color: black
+        .fa-user
+            margin-left: 30px
+
+@media screen and ( max-width: 900px  )
+    .Nav 
+        // background: red
+        .nav-container
+            .menu-icon 
+                display: block
+            .fa-search, .link
+                display: none
+            
+            nav
+                .link
+                    display: none
+    
