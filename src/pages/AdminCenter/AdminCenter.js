@@ -3,7 +3,7 @@ import './AdminCenter.sass';
 import AddProductModel from '../../Components/AddProductModel/AddProductModel';
 
 const AdminCenter = () => {
-	const [addBtn, setAddBtn] = useState(true);
+	const [addBtn, setAddBtn] = useState(false);
 
 	function AddBtnToggle() {
 		setAddBtn(!addBtn);
@@ -27,13 +27,13 @@ const AdminCenter = () => {
 					<tr>
 						<th>Product</th>
 						<th>Qty</th>
-						<th>Age</th>
+						<th>Price</th>
 						<th></th>
 						<th></th>
 					</tr>
 					<tr>
 						<td>Jill</td>
-						<td>Smith</td>
+						<td>5</td>
 						<td>50</td>
 						<td className='btn-col'>
 							<button className='btn delete-btn'>Delete</button>
@@ -44,7 +44,7 @@ const AdminCenter = () => {
 					</tr>
 					<tr>
 						<td>Jill</td>
-						<td>Smith</td>
+						<td>5</td>
 						<td>50</td>
 						<td className='btn-col'>
 							<button className='btn delete-btn'>Delete</button>
@@ -55,7 +55,7 @@ const AdminCenter = () => {
 					</tr>
 					<tr>
 						<td>Jill</td>
-						<td>Smith</td>
+						<td>5</td>
 						<td>50</td>
 						<td className='btn-col'>
 							<button className='btn delete-btn'>Delete</button>
@@ -66,7 +66,7 @@ const AdminCenter = () => {
 					</tr>
 					<tr>
 						<td>Jill</td>
-						<td>Smith</td>
+						<td>5</td>
 						<td>50</td>
 						<td className='btn-col'>
 							<button className='btn delete-btn'>Delete</button>
@@ -77,7 +77,7 @@ const AdminCenter = () => {
 					</tr>
 					<tr>
 						<td>Jill</td>
-						<td>Smith</td>
+						<td>5</td>
 						<td>50</td>
 						<td className='btn-col'>
 							<button className='btn delete-btn'>Delete</button>
@@ -88,7 +88,7 @@ const AdminCenter = () => {
 					</tr>
 					<tr>
 						<td>Jill</td>
-						<td>Smith</td>
+						<td>5</td>
 						<td>50</td>
 						<td className='btn-col'>
 							<button className='btn delete-btn'>Delete</button>
@@ -99,7 +99,7 @@ const AdminCenter = () => {
 					</tr>
 					<tr>
 						<td>Jill</td>
-						<td>Smith</td>
+						<td>5</td>
 						<td>50</td>
 						<td className='btn-col'>
 							<button className='btn delete-btn'>Delete</button>
@@ -110,7 +110,7 @@ const AdminCenter = () => {
 					</tr>
 					<tr>
 						<td>Jill</td>
-						<td>Smith</td>
+						<td>5</td>
 						<td>50</td>
 						<td className='btn-col'>
 							<button className='btn delete-btn'>Delete</button>
