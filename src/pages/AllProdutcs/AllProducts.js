@@ -2,7 +2,6 @@ import React from 'react';
 import './AllProducts.sass';
 import data from '../../data';
 import Item from '../../Components/Item/Item';
-import Footer from '../../Components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import PageTitle from '../../Components/PageTitle/PageTitle'
 const AllProducts = () => {
@@ -32,7 +31,6 @@ const AllProducts = () => {
 					))}
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };

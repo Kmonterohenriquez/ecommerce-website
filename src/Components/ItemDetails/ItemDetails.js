@@ -1,7 +1,6 @@
 import React from 'react';
 import data from '../../data';
 import './ItemDetails.sass';
-import Footer from '../Footer/Footer'
 
 const ItemDetails = props => {
 	const result = data.filter(curr => curr.id === +props.match.params.id);
@@ -38,7 +37,6 @@ const ItemDetails = props => {
 					</div>
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };

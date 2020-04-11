@@ -1,0 +1,61 @@
+.Contact 
+    min-height: calc( 100vh - 94px )
+    &-container
+        margin: 0 auto
+        max-width: 900px
+        width: 80%
+        padding: 100px 0 120px 0
+        
+
+        h1
+            text-align: center
+            font-size: 3rem
+            letter-spacing: .5px
+            word-spacing: 5px
+            text-transform: uppercase
+            margin-bottom: 40px
+    
+        form
+
+            .top-part
+                display: grid
+                grid-template-columns: 1fr 1fr
+                margin-bottom: 30px
+
+                .input-container 
+                    display: flex 
+                    flex-direction: column
+                    &:first-child
+                        margin-right: 20px
+                    
+                    label 
+                        margin-bottom: 7px
+                    input 
+                        width: 100%
+                        padding: 10px
+            .bottom-part
+                display: flex 
+                flex-direction: column
+                label 
+                        margin-bottom: 7px
+                textarea 
+                    padding: 10px
+        .btn-container
+            display: flex 
+            justify-content: center
+
+            button 
+                text-transform: uppercase
+                margin-top: 20px
+                cursor: pointer
+                font-size: .8rem
+                background: #CF2424
+                border-style: none 
+                color: white 
+                letter-spacing: 2px
+                padding: 10px
+                width: 130px
+                font-weight: 700
+                clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%)
+                box-shadow: 
+            

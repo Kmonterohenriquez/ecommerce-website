@@ -1,7 +1,6 @@
 import React from 'react'
 import PageTitle from '../Components/PageTitle/PageTitle'
 import Item from '../Components/Item/Item'
-import Footer from '../Components/Footer/Footer'
 import data from '../data'
 import {Link} from 'react-router-dom'
 
@@ -20,7 +19,6 @@ const Shirts = () => {
 						))}
 				</div>
 			</div>
-			<Footer />
         </div>
     )
 }

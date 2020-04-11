@@ -1,6 +1,5 @@
 import React from 'react';
 import PageTitle from '../Components/PageTitle/PageTitle'
-import Footer from '../Components/Footer/Footer'
 import data from '../data'
 import {Link} from 'react-router-dom'
 import Item from '../Components/Item/Item'
@@ -20,7 +19,6 @@ const Shoes = () => {
 						))}
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };

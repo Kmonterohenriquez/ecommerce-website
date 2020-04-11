@@ -3,7 +3,6 @@ import PageTitle from '../Components/PageTitle/PageTitle';
 import Item from '../Components/Item/Item';
 import data from '../data';
 import { Link } from 'react-router-dom';
-import Footer from '../Components/Footer/Footer';
 
 const Suits = () => {
 	return (
@@ -20,7 +19,6 @@ const Suits = () => {
 						))}
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };
