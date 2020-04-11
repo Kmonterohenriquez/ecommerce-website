@@ -1,6 +1,19 @@
+
+
+    
 .AdminCenter
     position: relative
     color: #747985
+    .unclickable 
+        // background: black
+        background: #00000065
+        position: absolute 
+        z-index: 2
+        top: -94px 
+        left: 0
+        width: 100%
+        min-height: 100vh
+        height: 100%
     &-container 
         padding: 100px 0
     .header-container
@@ -16,8 +29,13 @@
             font-weight: 700
             letter-spacing: .5px
             cursor: pointer
+            transition: background .4s
+
+            &:hover 
+                background: darken(#1E90FF, 10% ) 
 
             i 
+                cursor: pointer
                 margin-right: 5px
     table, th, td
         padding: 8px

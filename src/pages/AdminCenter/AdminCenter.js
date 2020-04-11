@@ -3,18 +3,23 @@ import './AdminCenter.sass';
 import AddProductModel from '../../Components/AddProductModel/AddProductModel';
 
 const AdminCenter = () => {
-	const [addBtn, setAddBtn] = useState(false);
+	const [addBtn, setAddBtn] = useState(true);
 
-    function AddBtnToggle(){
-        setAddBtn(!addBtn)
-    }
+	function AddBtnToggle() {
+		setAddBtn(!addBtn);
+	}
 	return (
 		<div className='AdminCenter'>
-			{addBtn? <AddProductModel AddBtnToggle={AddBtnToggle} />: null }
+			{addBtn ? (
+				<>
+					<div className='unclickable' onClick={()=>setAddBtn(!addBtn)}></div>
+					<AddProductModel AddBtnToggle={AddBtnToggle} />
+				</>
+			) : null}
 			<div className='AdminCenter-container sm-container'>
 				<div className='header-container'>
 					<h1 className='title'>Admin Center</h1>
-					<button className='add-btn' onClick={()=>setAddBtn(!addBtn)}>
+					<button className='add-btn' onClick={() => setAddBtn(!addBtn)}>
 						<i className='fas fa-plus'></i>Add New
 					</button>
 				</div>
