@@ -3,21 +3,30 @@ import './AddProductModel.sass';
 const AddProductModel = () => {
 	return (
 		<div className='AddProductModel'>
+			<i className="close-icon fas fa-times"></i>
 			<h1>Add Product</h1>
 			<hr />
 			<form action=''>
-				<img src='' alt='' />
-				<label htmlFor=''>Product Name</label>
-				<input type='text' placeholder='Enter a Name' />
-				<label>Description</label>
-				<textarea
-					name=''
-					id=''
-					cols='30'
-					rows='10'
-					placeholder='Briefly description of the product...'
-				></textarea>
+				<div className='img-container'>
+					<img src='' alt='' />
+				</div>
+				<div className='right-side'>
+					<label htmlFor=''>Product Name</label>
+					<input type='text' placeholder='Enter a Name' />
+					<label>Description</label>
+					<textarea
+						name=''
+						id=''
+						cols='30'
+						rows='10'
+						placeholder='Briefly description of the product...'
+					></textarea>
+				</div>
 			</form>
+			<div className="btn-container">
+				<button className='btn cancel-btn'>Cancel</button>
+				<button className='btn add-btn'>Add</button>
+			</div>
 		</div>
 	);
 };

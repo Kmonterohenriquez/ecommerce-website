@@ -1,4 +1,95 @@
 .AddProductModel
     background: white
-    max-width: 500px 
-    box-shadow: 2px 2px 10px black
+    box-shadow: 1px 1px 5px #42424249
+    padding: 60px 40px 20px
+    border-radius: 5px
+    position: absolute 
+    top: 5vh
+    left: 50% 
+    transform: translate(-50%)
+
+    .close-icon 
+        position: absolute
+        top: 25px
+        right: 40px
+        font-size: 1.8rem
+        cursor: pointer
+        opacity: .8
+        transition: opacity .3s
+        &:hover 
+            opacity: 1
+
+    hr 
+        margin: 10px 0 35px
+        opacity: .1
+        border: .5px solid 
+    
+    form 
+        position: relative
+        // display: grid 
+        display: flex
+
+        // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) 
+        // justify-content: center
+        // align-items: center
+        margin: 0
+        padding: 0
+        .img-container
+            background: #dadddf
+            height: 300px
+            width: 250px
+            margin-right: 30px
+            border-radius: 5px
+        .right-side 
+            display: flex
+            flex-direction: column
+            
+
+            label 
+                font-weight: 700
+                letter-spacing: .4px
+                margin-bottom: 5px
+
+            input, textarea 
+                margin-bottom: 15px
+                padding: 10px 10px
+                border-radius: 5px
+                border: 2px solid #dadddf
+            textarea 
+                height: 198px
+                max-height: 198px
+                min-height: 198px
+                margin: 0
+          
+    .btn-container 
+        display: flex 
+        justify-content: flex-end 
+        margin-top: 20px
+
+        .btn  
+            border-radius: 30px 
+            border-style: none
+            padding: 10px 30px
+            color: white
+            font-weight: 700
+            letter-spacing: .7px
+            box-shadow: 1px 1px 4px #5c636e70
+            cursor: pointer
+            transition: background .5s
+        
+        .cancel-btn 
+            background: #F44541
+            margin-right: 10px
+
+            &:hover 
+                background: darken(#F44541, 10% )
+
+        .add-btn 
+            background: #1E90FF
+            &:hover 
+                background: darken(#1E90FF, 10% )
+
+            
+            
+
+            

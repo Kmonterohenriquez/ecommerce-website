@@ -1,5 +1,6 @@
 import React from 'react';
 import './AdminCenter.sass';
+import AddProductModel from '../../Components/AddProductModel/AddProductModel'
 
 const AdminCenter = () => {
 	return (
@@ -77,6 +78,7 @@ const AdminCenter = () => {
                     
                 </table>
             </div>
+            <AddProductModel/>
 		</div>
 	);
 };
