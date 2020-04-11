@@ -8,8 +8,9 @@ import Suits from './pages/Suits';
 import Shoes from './pages/Shoes';
 import Shirts from './pages/Shirts';
 import ItemDetails from './Components/ItemDetails/ItemDetails';
-import Login from './Components/Login/Login'
+import Login from './Components/Login/Login';
 import AdminCenter from './pages/AdminCenter/AdminCenter';
+import Contact from './pages/Contact/Contact'
 
 export default (
 	<Switch>
@@ -19,8 +20,9 @@ export default (
 		<Route component={Suits} exact path='/suits' />
 		<Route component={Shoes} exact path='/shoes' />
 		<Route component={Shirts} exact path='/shirts' />
-		<Route component={ItemDetails} path='/item-details/:id'/>
+		<Route component={ItemDetails} path='/item-details/:id' />
 		<Route component={Login} exact path='/login' />
-		<Route component={AdminCenter} exact path='/admin_center'/>
+		<Route component={Contact} exact path='/contact' />
+		<Route component={AdminCenter} exact path='/admin_center' />
 	</Switch>
 );
