@@ -1,9 +1,9 @@
 import React from 'react';
 import './AddProductModel.sass';
-const AddProductModel = () => {
+const AddProductModel = (props) => {
 	return (
 		<div className='AddProductModel'>
-			<i className="close-icon fas fa-times"></i>
+			<i className="close-icon fas fa-times" onClick={props.AddBtnToggle}></i>
 			<h1>Add Product</h1>
 			<hr />
 			<form action=''>
@@ -24,7 +24,7 @@ const AddProductModel = () => {
 				</div>
 			</form>
 			<div className="btn-container">
-				<button className='btn cancel-btn'>Cancel</button>
+				<button className='btn cancel-btn' onClick={props.AddBtnToggle}>Cancel</button>
 				<button className='btn add-btn'>Add</button>
 			</div>
 		</div>
