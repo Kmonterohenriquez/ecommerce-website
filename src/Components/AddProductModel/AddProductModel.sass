@@ -58,8 +58,8 @@
                 border: 2px solid #dadddf
             textarea 
                 height: 198px
-                max-height: 198px
-                min-height: 198px
+                max-height: 120px
+                min-height: 110px
                 margin: 0
           
     .btn-container 
@@ -90,7 +90,22 @@
             &:hover 
                 background: darken(#1E90FF, 10% )
 
-            
+@media screen and ( max-width: 800px )
+    .AddProductModel
+        h1 
+            font-size: 1.5rem
+        hr 
+            margin: 10px 0 10px
+            opacity: .1
+            border: .5px solid 
+        form 
+            display: grid 
+            .img-container 
+                margin-bottom: 20px
+                height: 200px
+                width: 100%
+
+    
             
 
             

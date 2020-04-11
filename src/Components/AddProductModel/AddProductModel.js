@@ -13,6 +13,8 @@ const AddProductModel = (props) => {
 				<div className='right-side'>
 					<label htmlFor=''>Product Name</label>
 					<input type='text' placeholder='Enter a Name' />
+					<label htmlFor=''>Quantity</label>
+					<input type='text' placeholder='Enter quantity' />
 					<label>Description</label>
 					<textarea
 						name=''
