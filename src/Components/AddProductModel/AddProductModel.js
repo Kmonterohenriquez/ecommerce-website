@@ -8,6 +8,7 @@ const AddProductModel = (props) => {
 			<hr />
 			<form action=''>
 				<div className='img-container'>
+					<i className="fas fa-plus"></i>
 					<img src='' alt='' />
 				</div>
 				<div className='right-side'>
