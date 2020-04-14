@@ -12,7 +12,7 @@ class Home extends Component {
 		return (
 			<div className='Home'>
 				{/* <UpperLine /> */}
-				<Showcase />
+				{/* <Showcase /> */}
 				<Products title='Our Products' />
 				<WhyAaron/>
 				{/* <Products title='New Releases' /> */}
