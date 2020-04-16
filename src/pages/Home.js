@@ -13,12 +13,10 @@ class Home extends Component {
 			<div className='Home'>
 				{/* <UpperLine /> */}
 				{/* <Showcase /> */}
-				<Products title='Our Products' />
+				{/* <Products title='Our Products' /> */}
 				<WhyAaron/>
 				{/* <Products title='New Releases' /> */}
-				<NewReleases />
-				<Carousel/>
-				<Footer />
+				 
 			</div>
 		);
 	}
